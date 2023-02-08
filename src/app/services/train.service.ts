@@ -16,6 +16,22 @@ export class TrainService {
     type:'Locomotora electrica',
     speed:250,
     image:'1.jpg'
+    },
+    {
+    id:2,
+    name:'Renfe',
+    serie:333,
+    type:'Locomotora diesel',
+    speed:180,
+    image:'2.jpg'
+    },
+    {
+    id:3,
+    name:'Renfe',
+    serie:269,
+    type:'Locomotora electrica',
+    speed:200,
+    image:'3.jpg'
     }
   ];
 }
