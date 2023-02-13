@@ -8,8 +8,6 @@ export class UserService {
 
   constructor() { }
 
-  login:number=0;
-
   users:Array<User>=[
     {
       usuario:"javi",
@@ -38,7 +36,12 @@ export class UserService {
     }
   }
 
-  getLogin(){
-    return this.login;
+  getUser(){
+    let login=0;
+    this.users.find(user=>user.login = login);
+    console.log(login)
+    return login;
   }
+
+
 }
