@@ -13,9 +13,10 @@ export class GuardaLoginGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    if(this.servicioUser.getUser===1){
+    if(this.servicioUser.getUser()===true){
       return true;
     }else{
+      alert("Debe iniciar sesión para acceder");
       return false;
     }
 

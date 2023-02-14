@@ -20,7 +20,7 @@ export class LoginComponent {
       password:this.inputPassword,
     }
 
-  this.servicioLogin.checkLogin(login.usuario, login.password);
+  this.servicioLogin.checkLoginUser(login.usuario, login.password);
   this.miRouter.navigate(['']);
   }
 

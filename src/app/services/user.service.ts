@@ -26,21 +26,23 @@ export class UserService {
     },
   ]
 
-  checkLogin(usuarioFormulario:string, passwordFormulario:string){
+  checkLoginUser(usuarioFormulario:string, passwordFormulario:string){
     const usuarioEncontrado = this.users.find((user) => user.usuario === usuarioFormulario);
     const passwordEncontrao = this.users.find((user) => user.password === passwordFormulario);
-    console.log(usuarioEncontrado);
     if(usuarioEncontrado && passwordEncontrao){
       let pos=this.users.findIndex(u=>u.usuario==usuarioFormulario);
       this.users[pos].login=1;
     }
+    console.log(usuarioEncontrado);
   }
 
   getUser(){
-    let login=0;
-    this.users.find(user=>user.login = login);
-    console.log(login)
-    return login;
+    if(this.users.find(user=>user.login === 1)){
+      return true;
+    }else{
+      return false;
+    }
+
   }
 
 

@@ -8,6 +8,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { Error404Component } from './error404/error404.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { MaterialMotorComponent } from './secciones/material-motor/material-motor.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     InicioComponent,
     Error404Component,
-    LoginComponent
+    LoginComponent,
+    MaterialMotorComponent
   ],
   imports: [
     BrowserModule,
