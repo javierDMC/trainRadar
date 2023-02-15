@@ -32,6 +32,9 @@ export class UserService {
     if(usuarioEncontrado && passwordEncontrao){
       let pos=this.users.findIndex(u=>u.usuario==usuarioFormulario);
       this.users[pos].login=1;
+      alert("¡Bienvenido!");
+    }else{
+      alert("Usuario o password incorrecto");
     }
     console.log(usuarioEncontrado);
   }
