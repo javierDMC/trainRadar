@@ -1,0 +1,28 @@
+{"users":[
+  {
+    "usuario":"javi",
+    "password":"123",
+    "login":0
+  },
+  {
+    "usuario":"nat",
+    "password":"123",
+    "login":0
+  },
+  {
+    "usuario":"pepe",
+    "password":"123",
+    "login":0
+  }
+],
+"trenes":[
+  {
+    "id":1,
+    "name":"Renfe",
+    "serie":252,
+    "type":"Locomotora electrica",
+    "speed":250,
+    "image2":"1.jpg"
+    }
+]
+}
